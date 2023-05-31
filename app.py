@@ -4,6 +4,7 @@ import numpy as np
 from PIL import Image
 
 
+st.balloons()
 title_pic = Image.open('pics/title.png')
 st.image(title_pic)
 st.write('2023.5.31 Build1 :sunglasses:')
