@@ -2,8 +2,10 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 from PIL import Image
+import datetime
 
 
+d0 = datetime.datetime(2023, 5, 31)
 st.sidebar.title('目录')
 st.sidebar.tabs(['测试页面1', '测试页面2'])
 title_pic = Image.open('pics/title.png')
