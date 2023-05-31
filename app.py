@@ -6,4 +6,4 @@ from PIL import Image
 
 title_pic = Image.open('pics/title.png')
 st.image(title_pic)
-st.text('2023.5.31')
+st.text('2023.5.31 Build1')
