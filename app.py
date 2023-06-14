@@ -5,6 +5,8 @@ from PIL import Image
 import datetime
 
 
+conn = st.experimental_connection(type='mysql')
+df = conn.query("select * from carrankingsystemdatabase")
 d0 = datetime.datetime(2023, 5, 31, 17, 31, 10)
 d_now = datetime.datetime.now()
 delta = d_now - d0
@@ -20,6 +22,6 @@ st.image(title_pic)
 st.write('2023.5.31 Build1 :sunglasses:')
 price = st.slider('价格区间(万)', 0, 300, (140, 160))
 st.write('当前价格区间为', price[0], '~', price[1])
-conn = st.experimental_connection('mysql', type='sql')
-df = conn.query("select * from carrankingsystemdatabase")
+st.write('DATABASE')
 st.dataframe(df)
+st.write('ERROR')
