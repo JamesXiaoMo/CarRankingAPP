@@ -20,4 +20,6 @@ st.image(title_pic)
 st.write('2023.5.31 Build1 :sunglasses:')
 price = st.slider('价格区间(万)', 0, 300, (140, 160))
 st.write('当前价格区间为', price[0], '~', price[1])
-
+conn = st.experimental_connection('mysql', type='sql')
+df = conn.query("select * from carrankingsystemdatabase")
+st.dataframe(df)
