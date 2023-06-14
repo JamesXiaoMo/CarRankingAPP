@@ -23,5 +23,3 @@ st.write('当前价格区间为', price[0], '~', price[1])
 conn = st.experimental_connection('mysql', type='sql')
 df = conn.query("select * from carrankingsystemdatabase")
 st.dataframe(df)
-for row in df.itertuples():
-    st.write(f"{row.BASE_PRICE} {row.TOTAL_PRICE}:")
