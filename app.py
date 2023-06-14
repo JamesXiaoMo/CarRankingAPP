@@ -5,7 +5,7 @@ from PIL import Image
 import datetime
 
 
-conn = st.experimental_connection("mysql", type="mysql")
+conn = st.experimental_connection('mysql', type="mysql")
 df = conn.query("select * from carrankingsystemdatabase")
 d0 = datetime.datetime(2023, 5, 31, 17, 31, 10)
 d_now = datetime.datetime.now()
