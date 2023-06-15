@@ -3,7 +3,6 @@ import pandas as pd
 import numpy as np
 from PIL import Image
 import datetime
-from
 
 
 conn = st.experimental_connection("mysql", type="sql", ttl=500)
