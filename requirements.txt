@@ -4,6 +4,6 @@ numpy~=1.24.3
 SQLAlchemy~=2.0.16
 Pillow~=9.5.0
 SQLAlchemy~=2.0.16
-MySQL-python~=1.2.5
+MySQL-python~=1.2.4
 ConfigParser~=5.3.0
 pip~=23.1.2
